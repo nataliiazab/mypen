@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - my project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div style="width:800px; margin:0 auto;" class="container">
+    <header class="header">
+      <fieldset>
+      <h1 id="title" class="text-left">Registration for cybersecurity event</h1>
+      <p id="description" class="description text-left">
+        Please complete this form if you want to participate in the online event. This will not take more than 5 minutes of your time. You will recieve a
+        link to join the event to your email.</p>
+        </fieldset>
+        </header>
+    
+    <fieldset>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name"><B>Given name</B></label>
+    <input 
+           type="text"
+           name="name"
+           id="name"
+           class="form-control"
+           placeholder="Enter Given name here"
+           required/>
+  </div>
+  <div class="form-group">
+    <label id="middle name-label" for="middle name"><B>Middle name</B></label>
+    <input
+           type="text"
+           name="middle name"
+           id="middle name"
+           class="form-control"
+           placeholder="Enter Middle Name Here"/>
+  </div>
+  <div class="form-group">
+    <label id="surname name-label" for="surname"><B>Surname</B></label>
+    <input
+           type="text"
+           name="surname"
+           id="surname"
+           class="form-control"
+           placeholder="Enter Surname Here"
+           required/>
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email"><B>Email</B></label>
+    <input
+           type="email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder="e.g. brad.pitt@email.com"
+           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+           required/>
+  
+    <div>
+      <label id="number-label" for="phone"><B>Age</B>:</label>
+      <input 
+             type="number" 
+             id="number" 
+             class="form-control"
+             name="age" 
+             min="10"
+             max="99"
+             placeholder="10">   
+    </div>
+     
+      <div class="form-group">
+      <h3>Your level of cybersecurity skills:</h3>
+      <select id="dropdown" name="level" class="form-control" required>
+        <option disabled selected value>Select current level</option>
+        <option value="0">Beginner</option>
+        <option value="1">Intermediate</option>
+        <option value="2">Upper-Intermediate</option>
+        <option value="3">Advanced</option>
+        </select>
+        </div>
+
+      <div class="form-group">
+      <h3>Tecnhical Education Level Completed:</h3>
+        <select id="dropdown" name="level" class="form-control" required>
+          <option disabled selected value>Select your level of tecnhical education</option>
+        <option value="None">I don't have any tecnhical certificates</option>
+        <option value="Courses">Course certificate</option>
+        <option value="Secondary">High School certificate</option>  
+        <option value="College">College certificate</option>
+        <option value="University">Diploma of high education</option>
+        </select>
+    </div>
+ 
+      <div>
+      <h3 label for="laptop">Will you require a laptop to work on practical tasks during the event?</h3>
+      <p>
+        <input type="radio" name="laptop" value="yes"> Yes<br>
+        <input type="radio" name="laptop" value="no" checked> No<br>
+      </p>
+    </div>
+  
+      
+      <div class="form-group">
+          <h3>
+            What time is convinient for you to participate in the online event? (chose from 1 to 3 options)
+          </h3>
+
+          <label
+            ><input
+              name="prefer"
+              value="atribute"
+              type="checkbox"
+              class="input-checkbox"
+            />Monday evening</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="atribute"
+              type="checkbox"
+              class="input-checkbox"
+            />Thursday evening</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="atribute"
+              type="checkbox"
+              class="input-checkbox"
+            />Saturday morning</label>
+         </div>
+    <div class="form-group">
+          <h3>What is your motivation to participate in our event?</h3>
+          <textarea
+            id="motivation"
+            class="input-textarea"
+            name="motivation"
+            placeholder="Please write down no more than 100 words :)"
+          ></textarea>
+        </div>
+    <p>Thank you for taking the survey.  To submit the results, press the 
+<B>Send your application</B> button below.</p>
+
+   <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button>   </div>
+      </form>
+    </div>
+   </fieldset>
+  </body>
+  </html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
